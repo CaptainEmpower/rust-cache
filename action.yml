@@ -49,7 +49,7 @@ inputs:
     required: false
     default: "true"
   cache-provider:
-    description: "Determines which provider to use for caching. Options are github, or warpbuild. Defaults to github."
+    description: "Determines which provider to use for caching. Options are github, warpbuild, or cacheflow. Defaults to github."
     required: false
     default: "github"
   cache-bin:

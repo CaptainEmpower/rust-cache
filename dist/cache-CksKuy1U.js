@@ -1,4 +1,4 @@
-import { f as debug, m as mkdirP, n as create, l as exec, w as which, o as warning, i as info, H as HttpCodes, p as HttpClientError, q as HttpClient, t as isDebug, u as setSecret, B as BearerCredentialHandler, e as error } from './cleanup-BPghO_DY.js';
+import { f as debug, m as mkdirP, n as create, l as exec, w as which, o as warning, i as info, H as HttpCodes, p as HttpClientError, q as HttpClient, t as isDebug, u as setSecret, B as BearerCredentialHandler, e as error } from './cleanup-Da6K52o1.js';
 import * as path from 'path';
 import * as crypto from 'crypto';
 import * as fs from 'fs';
@@ -11,7 +11,7 @@ import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as require$$0$3 from 'buffer';
 import { Buffer as Buffer$1 } from 'buffer';
-import os, { EOL as EOL$1 } from 'node:os';
+import os__default, { EOL as EOL$1 } from 'node:os';
 import require$$1, { inspect } from 'node:util';
 import process$1 from 'node:process';
 import http from 'node:http';
@@ -23,7 +23,7 @@ import { createHmac } from 'node:crypto';
 import { r as requireDist, a as requireDist$1, b as requireStateCjs, c as requireStateCjs$1 } from './state-cjs-CkvFUaNy.js';
 import * as require$$0$2 from 'stream';
 import { Readable } from 'stream';
-import fs$1 from 'node:fs';
+import fs__default from 'node:fs';
 import 'os';
 import 'http';
 import 'https';
@@ -5559,7 +5559,7 @@ function getHeaderName() {
  */
 async function setPlatformSpecificData(map) {
     if (process$1 && process$1.versions) {
-        const osInfo = `${os.type()} ${os.release()}; ${os.arch()}`;
+        const osInfo = `${os__default.type()} ${os__default.release()}; ${os__default.arch()}`;
         if (process$1.versions.bun) {
             map.set("Bun", `${process$1.versions.bun} (${osInfo})`);
         }
@@ -40226,7 +40226,7 @@ async function streamToBuffer(stream, buffer, offset, end, encoding) {
  */
 async function readStreamToLocalFile(rs, file) {
     return new Promise((resolve, reject) => {
-        const ws = fs$1.createWriteStream(file);
+        const ws = fs__default.createWriteStream(file);
         rs.on("error", (err) => {
             reject(err);
         });
@@ -40242,8 +40242,8 @@ async function readStreamToLocalFile(rs, file) {
  *
  * Promisified version of fs.stat().
  */
-const fsStat = require$$1.promisify(fs$1.stat);
-const fsCreateReadStream = fs$1.createReadStream;
+const fsStat = require$$1.promisify(fs__default.stat);
+const fsCreateReadStream = fs__default.createReadStream;
 
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.

@@ -60,6 +60,12 @@ export async function getCacheProvider(): Promise<CacheProvider> {
     case "warpbuild":
       cache = await import("@actions/warpbuild-cache");
       break;
+    // CaptainEmpower fork: CacheFlow, the organisation's own cache service.
+    // @actions/cache cannot be redirected — the runner supplies its own
+    // ACTIONS_* values to a JS action — so a provider is the only way in.
+    case "cacheflow":
+      cache = await import("./cacheflowCache");
+      break;
     default:
       throw new Error(`The \`cache-provider\` \`${cacheProvider}\` is not valid.`);
   }

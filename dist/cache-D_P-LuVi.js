@@ -1,4 +1,4 @@
-import { v as commonjsGlobal, x as requireTunnel, y as getDefaultExportFromCjs, z as getAugmentedNamespace } from './cleanup-BPghO_DY.js';
+import { v as commonjsGlobal, x as requireTunnel, y as getDefaultExportFromCjs, z as getAugmentedNamespace } from './cleanup-Da6K52o1.js';
 import os__default from 'os';
 import crypto__default from 'crypto';
 import fs__default from 'fs';
@@ -32,13 +32,13 @@ import require$$0$b from 'punycode';
 import { r as requireDist$4, d as requireSrc$d, a as requireDist$5, b as requireStateCjs, c as requireStateCjs$1 } from './state-cjs-CkvFUaNy.js';
 import process$1 from 'node:process';
 import require$$6$2 from 'http2';
-import os from 'node:os';
+import os__default$1 from 'node:os';
 import http from 'node:http';
 import https from 'node:https';
 import zlib$1 from 'node:zlib';
-import require$$0$c from 'node:crypto';
-import require$$0$d from 'node:buffer';
-import fs from 'node:fs';
+import require$$0__default$4 from 'node:crypto';
+import require$$0$c from 'node:buffer';
+import fs__default$1 from 'node:fs';
 
 function _mergeNamespaces(n, m) {
     m.forEach(function (e) {
@@ -199101,7 +199101,7 @@ function requireLog$5 () {
 	  log: () => log
 	});
 	log_1 = __toCommonJS(log_exports);
-	var import_node_os = os;
+	var import_node_os = os__default$1;
 	var import_node_util = __toESM(require$$1$2);
 	var import_node_process = __toESM(process$1);
 	function log(message, ...args) {
@@ -200899,7 +200899,7 @@ function requireUserAgentPlatform$1 () {
 	  setPlatformSpecificData: () => setPlatformSpecificData
 	});
 	userAgentPlatform$1 = __toCommonJS(userAgentPlatform_exports);
-	var import_node_os = __toESM(os);
+	var import_node_os = __toESM(os__default$1);
 	var import_node_process = __toESM(process$1);
 	function getHeaderName() {
 	  return "User-Agent";
@@ -204338,7 +204338,7 @@ function requireUserAgentPlatform () {
 	  setPlatformSpecificData: () => setPlatformSpecificData
 	});
 	userAgentPlatform = __toCommonJS(userAgentPlatform_exports);
-	var import_node_os = __toESM(os);
+	var import_node_os = __toESM(os__default$1);
 	var import_node_process = __toESM(process$1);
 	function getHeaderName() {
 	  return "User-Agent";
@@ -204837,7 +204837,7 @@ function requireSha256 () {
 	  computeSha256Hmac: () => computeSha256Hmac
 	});
 	sha256 = __toCommonJS(sha256_exports);
-	var import_node_crypto = require$$0$c;
+	var import_node_crypto = require$$0__default$4;
 	async function computeSha256Hmac(key, stringToSign, encoding) {
 	  const decodedKey = Buffer.from(key, "base64");
 	  return (0, import_node_crypto.createHmac)("sha256", decodedKey).update(stringToSign).digest(encoding);
@@ -211282,7 +211282,7 @@ function requirePooledBuffer () {
 	});
 	PooledBuffer_1 = __toCommonJS(PooledBuffer_exports);
 	var import_BuffersStream = requireBuffersStream();
-	var import_node_buffer = __toESM(require$$0$d);
+	var import_node_buffer = __toESM(require$$0$c);
 	const maxBufferLength = import_node_buffer.default.constants.MAX_LENGTH;
 	class PooledBuffer {
 	  /**
@@ -216481,7 +216481,7 @@ function requireStorageSharedKeyCredential () {
 	  StorageSharedKeyCredential: () => StorageSharedKeyCredential
 	});
 	StorageSharedKeyCredential_1 = __toCommonJS(StorageSharedKeyCredential_exports);
-	var import_node_crypto = require$$0$c;
+	var import_node_crypto = require$$0__default$4;
 	var import_StorageSharedKeyCredentialPolicy = requireStorageSharedKeyCredentialPolicy();
 	var import_Credential = requireCredential();
 	class StorageSharedKeyCredential extends import_Credential.Credential {
@@ -217190,7 +217190,7 @@ function requireStorageSharedKeyCredentialPolicyV2 () {
 	  storageSharedKeyCredentialPolicyName: () => storageSharedKeyCredentialPolicyName
 	});
 	StorageSharedKeyCredentialPolicyV2 = __toCommonJS(StorageSharedKeyCredentialPolicyV2_exports);
-	var import_node_crypto = require$$0$c;
+	var import_node_crypto = require$$0__default$4;
 	var import_constants = requireConstants$2();
 	var import_utils_common = requireUtils_common$2();
 	var import_SharedKeyComparator = requireSharedKeyComparator();
@@ -217369,7 +217369,7 @@ function requireUserDelegationKeyCredential () {
 	  UserDelegationKeyCredential: () => UserDelegationKeyCredential
 	});
 	UserDelegationKeyCredential_1 = __toCommonJS(UserDelegationKeyCredential_exports);
-	var import_node_crypto = require$$0$c;
+	var import_node_crypto = require$$0__default$4;
 	class UserDelegationKeyCredential {
 	  /**
 	   * Azure Storage account name; readonly.
@@ -239452,7 +239452,7 @@ function requireUtils () {
 	  streamToBuffer3: () => streamToBuffer3
 	});
 	utils = __toCommonJS(utils_exports);
-	var import_node_fs = __toESM(fs);
+	var import_node_fs = __toESM(fs__default$1);
 	var import_node_util = __toESM(require$$1$2);
 	var import_constants = requireConstants$1();
 	async function streamToBuffer(stream, buffer, offset, end, encoding) {
